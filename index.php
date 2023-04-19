@@ -12,7 +12,6 @@
     main {
       display: flex;
       width: 100%;
-
       justify-content: flex-start;
       align-items: center;
       flex-direction: row;
@@ -23,8 +22,6 @@
       background-size: cover;
       min-height: 100vh;
     }
-
-    #about {}
   </style>
 </head>
 
