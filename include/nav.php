@@ -371,6 +371,16 @@ include 'include/session.php';
 
         </ul>
       </li>
+
+      <li>
+        <a href="postUpdate.php">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="link_name">Manage Post</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Manage Post</a></li>
+        </ul>
+      </li>
       <li>
         <div class="iocn-link">
           <a href="#">
@@ -384,15 +394,6 @@ include 'include/session.php';
           <li><a href="#">Web Design</a></li>
           <li><a href="#">Login Form</a></li>
           <li><a href="#">Card Design</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="postUpdate.php">
-          <i class='bx bx-pie-chart-alt-2'></i>
-          <span class="link_name">Manage Post</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Manage Post</a></li>
         </ul>
       </li>
       <li>

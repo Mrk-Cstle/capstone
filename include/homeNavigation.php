@@ -23,8 +23,10 @@
         }
 
         #pic {
-            width: 40%;
+
             margin-left: 20px;
+            display: flex;
+            flex-direction: row;
         }
 
         #pic img {
@@ -37,7 +39,7 @@
         }
 
         #menu {
-            width: 60%;
+            width: 80%;
             overflow: hidden;
             display: flex;
             flex-wrap: nowrap;
@@ -116,6 +118,9 @@
         </div>
         <div id="menu">
             <a href="">Home</a>
+            <a href="#about">About</a>
+            <a href="#faqs">FAQS</a>
+            <a href="">Contact</a>
             <a href="">News & Upadates</a>
             <a href="">Others</a>
             <div class="DropDownMenu">
