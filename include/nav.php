@@ -130,15 +130,16 @@ include 'include/session.php';
       <li>
         <a href="postUpdate.php">
           <i class="fas fa-chart-bar"></i>
-          <span class="nav-item">Manage Announcements</span>
+          <span class="nav-item">Manage Post</span>
         </a>
       </li>
-      <li>
-        <a href="#">
+      <ul>
+        <a href="createStaff.php">
           <i class="fas fa-tasks"></i>
-          <span class="nav-item">Task</span>
+          <span class="nav-item">Manage Staff</span>
         </a>
-      </li>
+
+      </ul>
       <li>
         <a href="#">
           <i class="fas fa-cog"></i>
