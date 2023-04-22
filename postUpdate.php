@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="include/nav.css">
     <title>Manage Post</title>
     <style>
         * {
@@ -18,7 +19,7 @@
             padding: 10px;
             border: 1px solid black;
             display: flex;
-            width: 70%;
+            width: 90%;
 
             justify-content: end;
             flex-direction: column;
@@ -46,9 +47,9 @@
 
         .postFormat {
             border: 1px solid black;
-            margin: 10px;
+            margin-top: 20px;
             height: auto;
-            width: 70%;
+            width: 90%;
         }
 
         .postFormat section {
@@ -66,6 +67,7 @@
             border: 1px solid black;
             width: 20%;
             text-align: center;
+            text-decoration: none;
 
         }
 
@@ -85,36 +87,41 @@
     include 'include/nav.php';
     include 'include/selectDb.php';
     ?>
-    <form method="POST" action="postUpdateDb.php">
-
-        <label for="postText">Post Announcements</label></br>
-        <textarea id="postText" name="postText" rows="5" cols="50"></textarea></br>
-
-        <div id="submitBtn">
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </div>
+    <section class="home-section">
 
 
-    </form>
+        <form method="POST" action="postUpdateDb.php">
 
-    <div>
-        <h1>Manage Post</h1>
+            <label for="postText">Post Announcements</label></br>
+            <textarea id="postText" name="postText" rows="5" cols="50"></textarea></br>
 
-        <?php
-        if ($resultGetPost->num_rows > 0) {
+            <div id="submitBtn">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
 
-            while ($row = $resultGetPost->fetch_assoc()) {
-                echo "<div class='postFormat'><section><h3>Uploader:" . $row['uploader'] . "</h3><h3>Upload Date:" . $row['uploadDate'] . "</h3></section><main><p>" . $row['announcement'] . "</p></main>" ?>
-                <footer><a class="aBtn" href="postEdit.php?id=<?php echo $row['uploadId']; ?>">Edit</a>
-                    <a class="aBtn" href="postDelete.php?id=<?php echo $row['uploadId']; ?>">Delete</a>
-                </footer>
-    </div> <?php
 
+        </form>
+
+
+        <div id="manageStyle">
+            <h1>Manage Post</h1>
+
+            <?php
+            if ($resultGetPost->num_rows > 0) {
+
+                while ($row = $resultGetPost->fetch_assoc()) {
+                    echo "<div class='postFormat'><section><h3>Uploader:" . $row['uploader'] . "</h3><h3>Upload Date:" . $row['uploadDate'] . "</h3></section><main><p>" . $row['announcement'] . "</p></main>" ?>
+                    <footer><a class="aBtn" href="postEdit.php?id=<?php echo $row['uploadId']; ?>">Edit</a>
+                        <a class="aBtn" href="postDelete.php?id=<?php echo $row['uploadId']; ?>">Delete</a>
+                    </footer>
+        </div> <?php
+
+                }
             }
-        }
-            ?>
+                ?>
 </div>
+    </section>
 </body>
 
 </html>

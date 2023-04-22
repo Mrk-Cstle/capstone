@@ -2,164 +2,163 @@
 include 'include/session.php';
 ?>
 <!DOCTYPE html>
-<html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
 
 <head>
-  <meta charset="UTF-8" />
-  <title>Side Menu Bar | Dashboard</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+  <meta charset="UTF-8">
+  <title> Drop Down Sidebar Menu | CodingLab </title>
+  <link rel="stylesheet" href="nav.css">
+  <!-- Boxiocns CDN Link -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    * {
-      margin: 0;
-      padding: 0;
-      outline: none;
-      border: none;
-      text-decoration: none;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
-
-    body {
-      background: #dfe9f5;
-      margin-left: 300px;
-    }
-
-    nav {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      height: 100%;
-      left: 0;
-      background: #fff;
-      width: 90px;
-      overflow: hidden;
-      transition: width 0.2s linear;
-      box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
-    }
-
-    .logo {
-      text-align: center;
-      display: flex;
-      transition: all 0.5s ease;
-      margin: 10px 0 0 10px;
-    }
-
-    .logo img {
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-    }
-
-    .logo span {
-      font-weight: bold;
-      padding-left: 15px;
-      font-size: 18px;
-      text-transform: uppercase;
-    }
-
-    a {
-      position: relative;
-      color: rgb(85, 83, 83);
-      font-size: 14px;
-      display: table;
-      width: 300px;
-      padding: 10px;
-    }
-
-    .fas {
-      position: relative;
-      width: 70px;
-      height: 40px;
-      top: 14px;
-      font-size: 20px;
-      text-align: center;
-    }
-
-    .nav-item {
-      position: relative;
-      top: 12px;
-      margin-left: 10px;
-    }
-
-    a:hover {
-      background: #eee;
-    }
-
-    nav:hover {
-      width: 280px;
-      transition: all 0.5s ease;
-    }
-
-    .logout {
-      position: absolute;
-      bottom: 0;
-    }
-  </style>
 </head>
 
 <body>
-  <nav>
-    <ul>
-      <li>
-        <a href="#" class="logo">
-          <img src="/logo.jpg" alt="" />
-          <span class="nav-item">Dashboard</span>
-        </a>
-      </li>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">CYSDO</span>
+    </div>
+    <ul class="nav-links">
       <li>
         <a href="#">
-          <i class="fas fa-home"></i>
-          <span class="nav-item">Home</span>
+          <i class='bx bx-grid-alt'></i>
+          <span class="link_name">Dashboard</span>
         </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Category</a></li>
+        </ul>
       </li>
       <li>
-        <a href="#">
-          <i class="fas fa-user"></i>
-          <span class="nav-item">Profile</span>
-        </a>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection'></i>
+            <span class="link_name">Manage Staff</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#"></a></li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">PHP & MySQL</a></li>
+        </ul>
       </li>
       <li>
-        <a href="#">
-          <i class="fas fa-table"></i>
-          <span class="nav-item">Dashboard</span>
-        </a>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt'></i>
+            <span class="link_name">Posts</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Login Form</a></li>
+          <li><a href="#">Card Design</a></li>
+        </ul>
       </li>
       <li>
         <a href="postUpdate.php">
-          <i class="fas fa-chart-bar"></i>
-          <span class="nav-item">Manage Post</span>
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="link_name">Manage Post</span>
         </a>
-      </li>
-      <ul>
-        <a href="createStaff.php">
-          <i class="fas fa-tasks"></i>
-          <span class="nav-item">Manage Staff</span>
-        </a>
-
-      </ul>
-      <li>
-        <a href="#">
-          <i class="fas fa-cog"></i>
-          <span class="nav-item">Settings</span>
-        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#"></a></li>
+        </ul>
       </li>
       <li>
         <a href="#">
-          <i class="fas fa-question-circle"></i>
-          <span class="nav-item">Help</span>
+          <i class='bx bx-line-chart'></i>
+          <span class="link_name">Chart</span>
         </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chart</a></li>
+        </ul>
       </li>
       <li>
-        <a href="logout.php" class="logout">
-          <i class="fas fa-sign-out-alt"></i>
-          <span class="nav-item">Log out</span>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-plug'></i>
+            <span class="link_name">Plugins</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Plugins</a></li>
+          <li><a href="#">UI Face</a></li>
+          <li><a href="#">Pigments</a></li>
+          <li><a href="#">Box Icons</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-compass'></i>
+          <span class="link_name">Explore</span>
         </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Explore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-cog'></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="profile-details">
+          <div class="profile-content">
+            <img src="image/profile.jpg" alt="profileImg">
+          </div>
+          <div class="name-job">
+            <div class="profile_name">Prem Shahi</div>
+            <div class="job">Web Desginer</div>
+          </div>
+          <i class='bx bx-log-out'></i>
+        </div>
       </li>
     </ul>
-  </nav>
+  </div>
+
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu'></i>
+      <span class="text">Drop Down Sidebar</span>
+    </div>
+  </section>
+  <script>
+    let arrow = document.querySelectorAll(".arrow");
+    for (var i = 0; i < arrow.length; i++) {
+      arrow[i].addEventListener("click", (e) => {
+        let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
+        arrowParent.classList.toggle("showMenu");
+      });
+    }
+
+    let sidebar = document.querySelector(".sidebar");
+    let sidebarBtn = document.querySelector(".bx-menu");
+    console.log(sidebarBtn);
+    sidebarBtn.addEventListener("click", () => {
+      sidebar.classList.toggle("close");
+    });
+  </script>
+
 </body>
 
 </html>
