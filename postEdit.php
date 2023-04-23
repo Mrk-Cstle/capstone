@@ -26,7 +26,7 @@ $row = mysqli_fetch_array($editPostQuery); ?>
             padding: 10px;
             border: 1px solid black;
             display: flex;
-            width: 70%;
+            width: 90%;
 
             justify-content: end;
             flex-direction: column;
@@ -86,19 +86,20 @@ $row = mysqli_fetch_array($editPostQuery); ?>
     include 'include/nav.php';
     include 'include/selectDb.php';
     ?>
-    <form method="POST" action="postEditDb.php?id=<?php echo $id; ?>">
+    <section class="home-section">
+        <form method="POST" action="postEditDb.php?id=<?php echo $id; ?>">
 
-        <label for="postText">Post Announcements</label></br>
-        <textarea id="postText" name="postText" rows="5" cols="50"></textarea></br>
+            <label for="postText">Post Announcements</label></br>
+            <textarea id="postText" name="postText" rows="5" cols="50"></textarea></br>
 
-        <div id="submitBtn">
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-        </div>
+            <div id="submitBtn">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
 
 
-    </form>
-
+        </form>
+    </section>
 
 </body>
 

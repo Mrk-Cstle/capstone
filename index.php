@@ -15,7 +15,7 @@
       justify-content: flex-start;
       align-items: center;
       flex-direction: row;
-      background-image: url("Images/CysdoBg.jpg");
+      background-image: url("Images/s.jpg");
       background-repeat: no-repeat;
       background-position: center;
       background-attachment: scroll;
@@ -114,6 +114,70 @@
       font-weight: bold;
 
     }
+
+    #contact {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      padding: 0px 80px;
+      margin: 0px 0px;
+      line-height: 1.8;
+
+    }
+
+    #contactHeader {
+      width: 100%;
+      margin-top: 100px;
+    }
+
+    #contactHeader h3 {
+      font-size: 40px;
+    }
+
+    #contactHeader p {
+      font-size: 20px;
+    }
+
+    #contactDetails {
+      width: 100%;
+      margin-bottom: 200px;
+
+    }
+
+    .contactFormat {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-top: 50px;
+
+    }
+
+    .contactIcon {
+      height: 100px;
+      width: 5%;
+      height: auto;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+
+
+    }
+
+    .contactIcon img {
+      height: 70px;
+      width: auto;
+    }
+
+    .contactText {
+
+      height: 100px;
+      width: 95%;
+      border: 1px solid black;
+      padding: 20px;
+    }
   </style>
 </head>
 
@@ -123,7 +187,7 @@
   ?>
   <main>
     <div class="1">
-      <h1>Lorem ipsum dolor sit amet.</h1>
+
     </div>
 
     <div id="2"></div>
@@ -285,6 +349,53 @@
       </div>
 
     </div>
+  </div>
+  <div id="contact">
+    <div id="contactHeader">
+      <h3>Contact & Address</h3>
+      <p>You can contact us through the following;
+      </p>
+    </div>
+    <div id="contactDetails">
+      <div class="contactFormat">
+        <div class="contactIcon">
+          <img src="Images/fbIcon.png" />
+        </div>
+        <div class="contactText">
+          <h5>Facebook Page</h5>
+          <a href="https://www.facebook.com/CEAP.CYSDO ">https://www.facebook.com/CEAP.CYSDO(City Youth and Sports Development Office – CSJDM)</a>
+        </div>
+      </div>
+      <div class="contactFormat">
+        <div class="contactIcon">
+          <img src="Images/gmailIcon.png" />
+        </div>
+        <div class="contactText">
+          <h5>Email</h5>
+          <a href="csjdm.cysdo1@gmail.com ">csjdm.cysdo1@gmail.com</a>
+        </div>
+      </div>
+      <div class="contactFormat">
+        <div class="contactIcon">
+          <img src="Images/callIcon.png" />
+        </div>
+        <div class="contactText">
+          <h5>Contact No.</h5>
+          <p>(639)905-603-7218</p>
+        </div>
+      </div>
+      <div class="contactFormat">
+        <div class="contactIcon">
+          <img src="Images/locationIcon.png" />
+        </div>
+        <div class="contactText">
+          <h5>Address</h5>
+          <p>Productivity Complex, Barangay Sapang Palay Proper, City of San Jose del Monte, Bulacan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>

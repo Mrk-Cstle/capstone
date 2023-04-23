@@ -120,7 +120,7 @@
             <a href="">Home</a>
             <a href="#about">About</a>
             <a href="#faqs">FAQS</a>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
             <a href="">News & Upadates</a>
             <a href="">Others</a>
             <div class="DropDownMenu">

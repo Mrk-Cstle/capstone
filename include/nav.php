@@ -371,7 +371,37 @@ include 'include/session.php';
 
         </ul>
       </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection'></i>
+            <span class="link_name">Manage Scholar</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage Scholar</a></li>
+          <li><a href="createScholar.php">Add Scholar</a></li>
+          <li><a href="createScholarList.php">List Of Scholar</a></li>
 
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection'></i>
+            <span class="link_name">Manage Applicants</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Manage Applicants</a></li>
+          <li><a href="applicantApprove.php">List Of Approve</a></li>
+          <li><a href="applicantDenied.php">List Of Denied</a></li>
+          <li><a href="applicantList.php">List Of Applicants</a></li>
+
+        </ul>
+      </li>
       <li>
         <a href="postUpdate.php">
           <i class='bx bx-pie-chart-alt-2'></i>
@@ -456,7 +486,8 @@ include 'include/session.php';
             <div class="profile_name"><?php echo $_SESSION['user']; ?></div>
             <div class="job">Web Desginer</div>
           </div>
-          <i class='bx bx-log-out'></i>
+          <a href="logout.php">
+            <i class='bx bx-log-out'></i></a>
         </div>
       </li>
     </ul>
