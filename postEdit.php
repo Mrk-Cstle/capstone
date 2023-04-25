@@ -89,7 +89,7 @@ $row = mysqli_fetch_array($editPostQuery); ?>
     <section class="home-section">
         <form method="POST" action="postEditDb.php?id=<?php echo $id; ?>">
 
-            <label for="postText">Post Announcements</label></br>
+            <label for="postText">Edit Announcements</label></br>
             <textarea id="postText" name="postText" rows="5" cols="50"></textarea></br>
 
             <div id="submitBtn">

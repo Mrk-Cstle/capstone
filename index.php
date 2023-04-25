@@ -72,7 +72,7 @@
       height: 100vh;
       width: 100%;
       display: flex;
-      background-color: wheat;
+      background-color: #e6e6e6;
       flex-direction: column;
       padding: 0px 80px;
       margin: 0px 0px;
@@ -101,6 +101,7 @@
       border: 1px solid black;
       padding: 10px;
       margin: 30px 0px;
+      background-color: wheat;
     }
 
     #faqsContent details p,
@@ -143,6 +144,19 @@
       width: 100%;
       margin-bottom: 200px;
 
+    }
+
+    .contactText {
+      background-color: #d2c8c1;
+    }
+
+    .contactText h5 {
+      font-size: 20px;
+    }
+
+    .contactText a,
+    p {
+      font-size: 15px;
     }
 
     .contactFormat {
@@ -196,6 +210,7 @@
     <div id="aboutPic">
       <img src="Images/CysdoLogo.png" />
     </div>
+
     <div id="aboutInfo">
       <div class="aboutFormat">
         <h3>MANDATE</h3>

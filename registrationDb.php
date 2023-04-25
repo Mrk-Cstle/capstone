@@ -187,7 +187,7 @@ $insert = mysqli_query($conn, $query);
         </div>
 
         <div id="picture2x2">
-            <img src="Images/1x1.jpg" alt="Picture 2x2" />
+            <img src="Images/No_Image_Available.jpg" alt="Picture 2x2" />
         </div>
 
 

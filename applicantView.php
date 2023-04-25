@@ -184,7 +184,7 @@ while ($res = mysqli_fetch_array($result)) {
         </div>
 
         <div id="picture2x2">
-            <img src="Images/1x1.jpg" alt="Picture 2x2" />
+            <img src="Images/No_Image_Available.jpg" alt="Picture 2x2" />
         </div>
 
 

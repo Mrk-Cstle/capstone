@@ -35,7 +35,7 @@ include 'include/session.php';
       left: 0;
       height: 100%;
       width: 260px;
-      background: #11101d;
+      background: #f26686;
       z-index: 100;
       transition: all 0.5s ease;
     }
@@ -95,7 +95,7 @@ include 'include/session.php';
     }
 
     .sidebar .nav-links li:hover {
-      background: #1d1b31;
+      background: #890c28;
     }
 
     .sidebar .nav-links li .iocn-link {
@@ -148,7 +148,7 @@ include 'include/session.php';
     .sidebar .nav-links li .sub-menu {
       padding: 6px 6px 14px 80px;
       margin-top: -10px;
-      background: #1d1b31;
+      background: #f26686;
       display: none;
     }
 
@@ -219,7 +219,7 @@ include 'include/session.php';
       display: flex;
       align-items: center;
       justify-content: space-between;
-      background: #1d1b31;
+      background: #ef456b;
       padding: 12px 0;
       transition: all 0.5s ease;
     }
@@ -348,7 +348,7 @@ include 'include/session.php';
     </div>
     <ul class="nav-links">
       <li>
-        <a href="#">
+        <a href="adminHome.php">
           <i class='bx bx-grid-alt'></i>
           <span class="link_name">Dashboard</span>
         </a>
@@ -381,8 +381,8 @@ include 'include/session.php';
         </div>
         <ul class="sub-menu">
           <li><a class="link_name" href="#">Manage Scholar</a></li>
-          <li><a href="createScholar.php">Add Scholar</a></li>
-          <li><a href="createScholarList.php">List Of Scholar</a></li>
+          <li><a href="manageScholar.php">Add Scholar</a></li>
+          <li><a href="manageScholarList.php">List Of Scholar</a></li>
 
         </ul>
       </li>
@@ -411,7 +411,7 @@ include 'include/session.php';
           <li><a class="link_name" href="#">Manage Post</a></li>
         </ul>
       </li>
-      <li>
+      <!-- <li>
         <div class="iocn-link">
           <a href="#">
             <i class='bx bx-book-alt'></i>
@@ -476,7 +476,7 @@ include 'include/session.php';
         <ul class="sub-menu blank">
           <li><a class="link_name" href="#">Setting</a></li>
         </ul>
-      </li>
+      </li> -->
       <li>
         <div class="profile-details">
           <div class="profile-content">
@@ -484,7 +484,7 @@ include 'include/session.php';
           </div>
           <div class="name-job">
             <div class="profile_name"><?php echo $_SESSION['user']; ?></div>
-            <div class="job">Web Desginer</div>
+            <div class="job"></div>
           </div>
           <a href="logout.php">
             <i class='bx bx-log-out'></i></a>

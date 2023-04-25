@@ -17,8 +17,8 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            background-color: rgb(80, 177, 50);
-            box-shadow: 0px 10px 20px #000000;
+            background: #f26686;
+            box-shadow: 0px 10px 50px #000000;
             margin-bottom: 5px;
         }
 
@@ -29,6 +29,10 @@
             flex-direction: row;
         }
 
+        #headImg {
+            mix-blend-mode: multiply;
+        }
+
         #pic img {
             height: 60px;
             width: auto;
@@ -36,6 +40,7 @@
             margin-left: 20px;
 
             margin-bottom: 10px;
+
         }
 
         #menu {
@@ -114,15 +119,15 @@
     <div id="header">
         <div id="pic">
             <img src="./Images/CysdoLogo.png" />
-            <img src="./Images/Header.png" />
+            <img id="headImg" src="./Images/CYSDOHeader.png" />
         </div>
         <div id="menu">
-            <a href="">Home</a>
-            <a href="#about">About</a>
-            <a href="#faqs">FAQS</a>
-            <a href="#contact">Contact</a>
-            <a href="">News & Upadates</a>
-            <a href="">Others</a>
+            <a href="index.php">Home</a>
+            <a href="index.php#about">About</a>
+            <a href="index.php#faqs">FAQS</a>
+            <a href="index.php#contact">Contact</a>
+            <a href="announcementTab.php">News & Upadates</a>
+
             <div class="DropDownMenu">
                 <button class="DropDownBtn"><a>Login</a></button>
                 <div class="DropDownContent">

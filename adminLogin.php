@@ -38,7 +38,7 @@
             flex-direction: column;
             height: 550px;
             width: 500px;
-            background-color: rgba(84, 230, 79, 0.8);
+            background: #f788a0;
             box-shadow: 10px 20px 26px 10px rgba(5, 5, 5, 0.7);
         }
 
